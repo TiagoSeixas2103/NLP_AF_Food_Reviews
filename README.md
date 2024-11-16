@@ -1,4 +1,7 @@
-# NLP_AF_Food_Reviews
+# Classification of Food Reviews with Deep Learning
+
+| author | Tiago Vitorino Seixas |
+|:------:|:---------------------:|
 
 This is a project meant to show the process of classifying a dataset using Deep Learning. Click on the image below to be redirected to the YouTube Guide Video.
 
