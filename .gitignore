@@ -1,0 +1,5 @@
+glove.6B
+__pycache__
+*.pt
+*.csv
+*.png
