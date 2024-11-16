@@ -1,7 +1,25 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from tqdm import tqdm
+import pandas as pd
+import urllib.request
+import zipfile
 import re
+import os
+
+class ZipFileWithProgress(zipfile.ZipFile):
+    def extractall(self, path=None, members=None, pwd=None):
+        if members is None:
+            members = self.namelist()
+        total = len(members)
+        
+        with tqdm(total=total, unit='file') as pbar:
+            for member in members:
+                self.extract(member, path, pwd)
+                pbar.update(1)
 
 def get_vocabulary(text : str,
                    expr: str=r"\b\w+\b",
