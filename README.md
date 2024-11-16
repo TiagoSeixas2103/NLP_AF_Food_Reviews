@@ -2,7 +2,7 @@
 
 This is a project meant to show the process of classifying a dataset using Deep Learning.\
 
-[![Watch the video](https://img.youtube.com/vi/[change]/maxresdefault.jpg)](https://youtu.be/[change])
+[![Watch the video](https://img.youtube.com/vi/7ma41lAB8cM/maxresdefault.jpg)](https://youtu.be/7ma41lAB8cM)
 
 # Sources
 https://www.sciencedirect.com/science/article/pii/S1877050922014971 (paper used to source dataset)
