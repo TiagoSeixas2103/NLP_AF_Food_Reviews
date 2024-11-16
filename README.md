@@ -1,17 +1,13 @@
 # NLP_AF_Food_Reviews
 
-## Roteiro
+This is a project meant to show the process of classifying a dataset using Deep Learning.\
 
-1 - Primeiro nós usamos GLoVe para criar embeddings, onde o glove tem uma base de palavras que nós usamos de vocabulário para então transformar o texto que iremos classificar em vetores.
+[![Watch the video](https://img.youtube.com/vi/[change]/maxresdefault.jpg)](https://youtu.be/[change])
 
-2 - Depois, processamos a database, deixando apenas dois valores de output (ratings maiores que três são 1, menores são 0, demais desconsiderados)
+# Sources
+https://www.sciencedirect.com/science/article/pii/S1877050922014971 (paper used to source dataset)
 
-3 - Separamos a database em segmentos de teste e treinamento, sendo o segmento de treinamento 80% das linhas da nossa database. X_train representa os textos do segmento de treinamento a serem classificados, e y_train as classes.  
+https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews (dataset)
 
-4 - Realizamos o processo de tokenização
+https://coderzcolumn.com/tutorials/artificial-intelligence/how-to-use-glove-embeddings-with-pytorch (Embedding Image From Presentaion)
 
-5 - Criamos os batches para cada epoch
-
-6 - Iteramos o modelo pelo número de epochs, treinando-o e aprimorando-o
-
-7 - Otimizador modifica parametros para melhor o sistema em relação a uma funcao de perdas, que serve para medir a quantidade de erros que ocorrem no treinamento. BCEWithLogitsLoss foi usada por ser uma função de classificação para binários.
